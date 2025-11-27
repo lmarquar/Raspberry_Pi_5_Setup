@@ -1,11 +1,13 @@
 # Raspberry_Pi_5_Setup
-this is what i need to get my current config running. It consists of Fritzbox-Network, RaspberryPi5+NVMe Base Projekt, strato-domain, nextcloud-aio. I use it soley as cloud storage. Feel free to grab and interact!
+this is what i need to get my current config running. It consists of Fritzbox-Network, [RaspberryPi5+NVMe Base Projekt](https://www.etsy.com/de-en/listing/1732482582/), strato-domain, nextcloud-aio. I use it soley as cloud storage. Feel free to grab and interact!
 
 ## Os:
 - PiOs Lite Download with SSH enabled. Continue once you can acess with SSH from your pc.
 
 ## Highsideswitch-fan:
 or how to connect a PWM-Fan in a way that it shuts off at night and throttles automatically.
+### Parts:
+c557b, bc547b, 2 1kΩ-resistors, GeekPi LED-Fan
 ### circuit:
 <img width="440" height="440" alt="image" src="https://github.com/user-attachments/assets/f01977fc-32c6-43df-839f-fcfcaeec8156" />
 
@@ -25,6 +27,7 @@ then paste
 0 6 * * * echo 1 > /sys/class/leds/fan_state/brightness  
 0 22 * * * echo 0 > /sys/class/leds/fan_state/brightness  
 ```
+now you can sleep peacefully, even if you have a Raspberry-Server in your room :-).
 
 ## Homecloud:
 ### inital Setup:
@@ -35,7 +38,7 @@ then paste
 - make sure it's acessible from outside your LAN.
 - If the public Ip changes regularly, get flexible and set a DynDNS instead of A record:
   - tutorial for my setup: https://www.strato.de/faq/hosting/so-einfach-richten-sie-dyndns-fuer-ihre-domains-ein/
-  - otherwise what to do is set Domain dynDns instead of A record. then you need to configure your router to connect your server with the service.
+  - otherwise what to do is set domain to dynDns instead of A record. then you need to configure your router to connect your server with the service.
   - Update-Url has this format with all 'x'-words replaced: `https://xDomain.de:xPassword@dyndns.strato.com/nic/update?hostname=xSubDomain.xDomain.de&myip=<ipaddr>,<ip6addr>`
 - set automatic updates as found in the nextcloud-aio Docs
 - Backup: set up a proper SSD with ext4-fileformat and automounting via /etc/fstab. Then configure borg-backup.
@@ -51,3 +54,8 @@ then paste
 
 ## additional improvements
 - add cronjobs for automatic firmware-updates.
+
+## Sources:
+- https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README
+- https://github.com/lmarquar/Nextcloud_on_Raspi_commands
+- 
