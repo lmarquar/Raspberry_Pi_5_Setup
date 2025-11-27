@@ -36,7 +36,7 @@ then paste
 - If the public Ip changes regularly, get flexible and set a DynDNS instead of A record:
   - tutorial for my setup: https://www.strato.de/faq/hosting/so-einfach-richten-sie-dyndns-fuer-ihre-domains-ein/
   - otherwise what to do is set Domain dynDns instead of A record. then you need to configure your router to connect your server with the service.
-  - Update-Url has this format with all 'my'-words replaced: https://myDomain.de:myPassword@dyndns.strato.com/nic/update?hostname=mySubDomain.myDomain.de&myip=<ipaddr>,<ip6addr>
+  - Update-Url has this format with all 'x'-words replaced: `https://xDomain.de:xPassword@dyndns.strato.com/nic/update?hostname=xSubDomain.xDomain.de&myip=<ipaddr>,<ip6addr>`
 - set automatic updates as found in the nextcloud-aio Docs
 - Backup: set up a proper SSD with ext4-fileformat and automounting via /etc/fstab. Then configure borg-backup.
 - Bonus: get rid of all warnings in your nc-settings.
