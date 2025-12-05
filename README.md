@@ -42,6 +42,7 @@ now you can sleep peacefully, even if you have a Raspberry-Server in your room :
   - Update-Url has this format with all 'x'-words replaced: `https://xDomain.de:xPassword@dyndns.strato.com/nic/update?hostname=xSubDomain.xDomain.de&myip=<ipaddr>,<ip6addr>`
 - set automatic updates as found in the nextcloud-aio Docs
 - Backup: set up a proper SSD with ext4-fileformat and automounting via /etc/fstab. Then configure borg-backup.
+- Email-Server: configured it with my mail account wich was provided with the domain by strato. Good for resetting your password!
 - Bonus: get rid of all warnings in your nc-settings.
 
 ### be careful with:
