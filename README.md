@@ -9,7 +9,7 @@ or how to connect a PWM-Fan in a way that it shuts off at night and throttles au
 ### Parts:
 c557b, bc547b, 2 1kΩ-resistors, GeekPi LED-Fan
 ### circuit:
-<img width="440" height="440" alt="image" src="https://github.com/user-attachments/assets/f01977fc-32c6-43df-839f-fcfcaeec8156" />
+<img width="440" height="440" alt="circuit_highswitch_raspi" src="https://github.com/user-attachments/assets/217775b8-8e54-4855-8acf-130e73c56989" />
 
 ### define the pins:
 to create the on-off switch append to end of `/boot/firmware/config.txt`
