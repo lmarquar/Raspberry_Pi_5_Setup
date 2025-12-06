@@ -46,12 +46,16 @@ now you can sleep peacefully, even if you have a Raspberry-Server in your room :
 - Backup: set up a proper SSD with ext4-fileformat and automounting via /etc/fstab. Then configure borg-backup.
 - Email-Server: configured it with my mail account wich was provided with the domain by strato. Good for resetting your password!
 - Phone-Sync: Contacts, Calendar, Task-list work alright with Davx5, which i got for free from F-Droid.
-- FTP: 
+
 - Bonus: get rid of all warnings in your nc-settings.
 
 ### be careful with:
 - optional NC containers which like to use ports, like to interfere and lead to random bugs.
 - saving all your passwords well. I'm still with keepass on usb since 12 year old for all the rudimentary.
+
+### still working on
+- resolve occasional certificate-issues when trying to access from the local net. Solvable with PiHole or BIND?
+- FTP-compatability: nextcloud-aio does not support connecting via ftp. but my security camera can only transfer to ftp. i need a secondary ftp-instance. which i can access from both nextcloud and the camera...
 
 ### Useful commands:
 #### AIO interface/borg password
