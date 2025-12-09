@@ -1,7 +1,7 @@
 # Raspberry_Pi_5_Setup
 Or how to Homecloud!
 
-this is what i need to get my current config running. It consists of Fritzbox-Network, [RaspberryPi5+NVMe Base Projekt](https://www.etsy.com/de-en/listing/1732482582/), strato-domain, nextcloud-aio. I use it to manage almost everything digital: Storage, Email, Conctacts, Calendar, todo-Lists, Passwords and even Office tasks. It runs fairly well, it has no running costs and is a solid alternative to just having all your information floating out there in hands of google, aws or whom-ever. Feel free to grab and interact!
+this is what i need to get my current config running. It consists of Fritzbox-Network, [RaspberryPi5+NVMe Base Projekt](https://www.etsy.com/de-en/listing/1732482582/), strato-domain, nextcloud-aio. I use it to manage almost everything digital: Storage, Email, Conctacts, Calendar, todo-Lists, Passwords and even Office tasks. It runs okay, it has no running costs and will get better in future for sure! An alternative to just having all your information floating out there in hands of google, aws or whom-ever. Feel free to grab and interact!
 
 ## Os:
 - PiOs Lite Download with SSH enabled. Continue once you can acess with SSH from your pc.
