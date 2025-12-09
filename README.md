@@ -7,7 +7,7 @@ this is what i need to get my current config running. It consists of Fritzbox-Ne
 - PiOs Lite Download with SSH enabled. Continue once you can acess with SSH from your pc.
 
 ## Highsideswitch-fan:
-this chapter shows how to connect a PWM-Fan in a way that it shuts off at night and throttles automatically.
+this chapter shows how to connect a PWM-Fan in a way that it shuts off at night and throttles automatically. Not a must, just convenient if you have it in your sleeping room!
 ### Parts:
 c557b, bc547b, 2 1kΩ-resistors, GeekPi LED-Fan
 ### circuit:
@@ -29,7 +29,7 @@ then paste
 0 6 * * * echo 1 > /sys/class/leds/fan_state/brightness  
 0 22 * * * echo 0 > /sys/class/leds/fan_state/brightness  
 ```
-now you can sleep peacefully, even if you have a Raspberry-Server in your room :-).
+Now you can sleep peacefully, even if you have a Raspberry-Server next to you :-).
 
 ## Homecloud:
 ### inital Setup:
