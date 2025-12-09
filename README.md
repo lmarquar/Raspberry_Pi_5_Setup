@@ -47,7 +47,7 @@ Now you can sleep peacefully, even if you have a Raspberry-Server next to you :-
 - set automatic updates as found in the nextcloud-aio Docs
 - Backup: set up a proper SSD with ext4-fileformat and automounting via /etc/fstab. Then configure borg-backup.
 - Email-Server: configured it with my mail account wich was provided with the domain by strato. Good for resetting your password!
-- Phone-Sync: Contacts, Calendar, Task-list work alright with Davx5, which i got for free from F-Droid.
+- Phone-Sync: Contacts, Calendar, Task-list work alright with Davx5 and Tasks, which i got for free from F-Droid.
 
 - Bonus: get rid of all warnings in your nc-settings.
 
