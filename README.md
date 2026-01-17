@@ -39,9 +39,9 @@ Now you can sleep peacefully, even if you have a Raspberry-Server next to you :-
 - follow the provided guide with no extra features: https://github.com/nextcloud/all-in-one
 - make sure it's acessible from outside your LAN.
 - If the public Ip changes regularly, get flexible and set a DynDNS instead of A record:
-  - tutorial for my setup: https://www.strato.de/faq/hosting/so-einfach-richten-sie-dyndns-fuer-ihre-domains-ein/
+  - tutorial for my setup: https://www.strato.de/faq/hosting/so-einfach-richten-sie-dyndns-fuer-ihre-domains-ein/ 
   - otherwise what to do is set domain to dynDns instead of A record. then you need to configure your router to connect your server with the service.
-  - Update-Url has this format with all 'x'-words replaced: `https://xDomain.de:xPassword@dyndns.strato.com/nic/update?hostname=xSubDomain.xDomain.de&myip=<ipaddr>,<ip6addr>`
+  - For my setup local access was blocked, because of ipv6 dyndns support interfering with DNS-Rebind protection and quick fix is to not implement <ip6addr>
 
 ### further improvements
 - set automatic updates as found in the nextcloud-aio Docs
